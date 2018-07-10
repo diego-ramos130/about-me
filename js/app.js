@@ -2,7 +2,7 @@
 
 alert('Hello, user. My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
 alert('remember, yes/no or y/n works all the same.');
-var score = 0; 
+var score = 0;
 console.log('score at start of game should be 0.', score);
 var questionOne = prompt('Do I wear glasses?');
 if (questionOne.toUpperCase() === 'Y' || questionOne.toUpperCase() === 'YES' ) {
