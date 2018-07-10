@@ -1,36 +1,34 @@
 "use strict";
+
 alert('Hello, user. My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
 alert('remember, yes/no or y/n works all the same.');
-var score = 0; 
+var score = 0;
 console.log('score at start of game should be 0.', score);
 var questionOne = prompt('Do I wear glasses?');
-if (questionOne.toLowerCase === 'y' || questionOne.toLowerCase === 'yes' ) {
+if (questionOne.toUpperCase === 'Y' || questionOne.toUpperCase === 'YES' ) {
   alert('Correct!');
-  score++;
-} else if (questionOne.toLowerCase === 'n' || questionOne.toLowerCase === 'no') {
+} else if (questionOne.toUpperCase === 'N' || questionOne.toUpperCase === 'NO') {
   alert('Incorrect!');
-} else{
+} else {
   alert('Wrong input!');
 }
 console.log('question one answer.', questionOne);
 
 
 var questionTwo = prompt('Is my nickname Peter?');
-if (questionTwo.toLowerCase === 'y' || questionTwo.toLowerCase === 'yes') {
+if (questionTwo.toUpperCase === 'Y' || questionTwo.toUpperCase === 'YES') {
   alert('Incorrect!');
-} else if (questionTwo.toLowerCase === 'n' || questionTwo.toLowerCase === 'no') {
+} else if (questionTwo.toUpperCase === 'N' || questionTwo.toUpperCase === 'NO') {
   alert('Correct!');
-  score++;
 } else {
   alert('Wrong input!');
 }
 console.log('question two answer.', questionTwo);
 
 var questionThree = prompt('Do I go to the Seattle Campus for CodeFellows?');
-if (questionThree.toLowerCase === 'y' || questionThree.toLowerCase === 'yes') {
+if (questionThree.toUpperCase === 'Y' || questionThree.toUpperCase === 'YES') {
   alert('Correct!');
-  score++;
-} else if (questionThree.toLowerCase === 'n' || questionThree.toLowerCase === 'no') {
+} else if (questionThree.toUpperCase === 'N' || questionThree.toUpperCase === 'NO') {
   alert('Incorrect!');
 } else {
   alert('Wrong input!');
@@ -39,11 +37,10 @@ console.log('question three answer.', questionThree);
 
 
 var questionFour = prompt('Do I like sweets/candy?');
-if (questionFour.toLowerCase === 'y' || questionFour.toLowerCase === 'yes') {
+if (questionFour.toUpperCase === 'Y' || questionFour.toUpperCase === 'YES') {
   alert('Incorrect!');
-} else if (questionFour.toLowerCase === 'n' || questionFour.toLowerCase === 'no') {
+} else if (questionFour.toUpperCase === 'NO' || questionFour.toUpperCase === 'NO') {
   alert('Correct!');
-  score++;
 } else {
   alert('Wrong input!');
 }
@@ -51,15 +48,14 @@ console.log('question four answer.', questionFour);
 
 
 var questionFive = prompt('Do I go to the Seattle Campus for CodeFellows?');
-if (questionFive.toLowerCase === 'y' || questionFive.toLowerCase === 'yes') {
+if (questionFive.toUpperCase === 'Y' || questionFive.toUpperCase === 'YES') {
   alert('Correct!');
-  score++;
-} else if (questionFive.toLowerCase === 'n' || questionFive.toLowerCase === 'no') {
+} else if (questionFive.toUpperCase === 'N' || questionFive.toUpperCase === 'NO') {
   alert('Incorrect!');
 } else {
   alert('Wrong input!');
 }
-console.log('question two answer.', questionFive);
+console.log('question five answer.', questionFive);
 
 
 
