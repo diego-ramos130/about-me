@@ -2,7 +2,7 @@
 alert('Hello, user. My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
 alert('remember, yes/no or y/n works all the same.');
 var score = 0; 
-
+console.log('score at start of game should be 0.', score);
 var questionOne = prompt('Do I wear glasses?');
 if (questionOne.toLowerCase === 'y' || questionOne.toLowerCase === 'yes' ) {
   alert('Correct!');
@@ -35,6 +35,8 @@ if (questionThree.toLowerCase === 'y' || questionThree.toLowerCase === 'yes') {
 } else {
   alert('Wrong input!');
 }
+console.log('question three answer.', questionThree);
+
 
 var questionFour = prompt('Do I like sweets/candy?');
 if (questionFour.toLowerCase === 'y' || questionFour.toLowerCase === 'yes') {
@@ -45,6 +47,8 @@ if (questionFour.toLowerCase === 'y' || questionFour.toLowerCase === 'yes') {
 } else {
   alert('Wrong input!');
 }
+console.log('question four answer.', questionFour);
+
 
 var questionFive = prompt('Do I go to the Seattle Campus for CodeFellows?');
 if (questionFive.toLowerCase === 'y' || questionFive.toLowerCase === 'yes') {
@@ -55,6 +59,8 @@ if (questionFive.toLowerCase === 'y' || questionFive.toLowerCase === 'yes') {
 } else {
   alert('Wrong input!');
 }
+console.log('question two answer.', questionFive);
+
 
 
 alert('your score was ' + score + ' out of 5.');
