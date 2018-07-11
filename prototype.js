@@ -46,16 +46,16 @@ var consoleLogQuestions = [
   'q7 about good sf games, answer is 2, 3, 4'
 ];
 
-function checkAnswer() {
-  return true;
+function validator(answer) {
+  return (answer === yes[0] || answer === yes[1] || answer === no[0]|| answer === no[1]);
 }
 
 for (var questionNumber = 1; questionNumber < 7; questionNumber){
   var answer = prompt(questions[questionNumber - 1]).toUpperCase();
-  if (answer === yes.some(checkAnswer) && questionNumber === yesAnswers.some(checkAnswer)){
+  if (answer === yes.some(validator) && questionNumber === yesAnswers.some(validator)){
     alert(right);
     score++;
-  } else if (answer === no.some(checkAnswer) && questionNumber === noAnswers.some(checkAnswer)){
+  } else if (answer === no && questionNumber === noAnswers){
     alert(right);
     score++;
   } else if (questionNumber === 6) {
@@ -74,19 +74,19 @@ for (var questionNumber = 1; questionNumber < 7; questionNumber){
     }
   } else if (questionNumber === 7) {
     for (var sevenGuess = 0; sevenGuess <= 6; sevenGuess++){
-      if (answer === correctAnswersSeven.some(checkAnswer))  {
+      if (answer === correctAnswersSeven)  {
         alert(right);
         break;
-      } else if (answer !== correctAnswersSeven.some(checkAnswer)) {
+      } else if (answer !== correctAnswersSeven) {
         alert(wrong);
       } else {
         alert(badInput);
       }
     }
     alert(correctAnswersSevenMsg);
-  } else if (answer !== yes.some(checkAnswer) && questionNumber === yesAnswers.some(checkAnswer)) {
+  } else if (answer !== yes && questionNumber === yesAnswers) {
     alert(wrong);
-  } else if (answer !== no.some(checkAnswer) && questionNumber === noAnswers.some(checkAnswer)) {
+  } else if (answer !== no && questionNumber === noAnswers) {
     alert(wrong);
   } else {
     alert(badInput);
