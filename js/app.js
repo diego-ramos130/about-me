@@ -81,12 +81,10 @@ if (answerFive === 'Y' || answerFive === 'YES') {
 console.log('q5 about games, correct answer is no.', answerFive);
 console.log('current score: possible points at this stage is 5.', score);
 
-let guessesSix = 0;
-let maxGuesses = 6;
-var answerSix = 0;
+var maxGuessesSix = 4;
 var favNum = 7;
-for (guessesSix = 0; guessesSix < maxGuesses; guessesSix++){
-  answerSix = prompt('What is my favorite number?');
+for (var guessesSix = 0; guessesSix < maxGuessesSix; guessesSix++){
+  var answerSix = prompt('What is my favorite number?');
   if (answerSix > favNum) {
     alert('too high!');
   } else if (answerSix < favNum) {
@@ -94,27 +92,27 @@ for (guessesSix = 0; guessesSix < maxGuesses; guessesSix++){
   }
   else {
     alert(right);
+    score++;
     break;
   }
 }
 
-
 var sfgames = [1, 2, 3, 4, 5];
-var guessesSeven = 0;
-var answerSeven = 0;
-while (answerSeven !== sfgames[1] || answerSeven !== sfgames[2] || answerSeven !== sfgames[3] || guessesSeven !== 6) {
-  answerSeven = prompt('Can you guess one of the actually good Street Fighter Games? (from 1 to 5)');
-  if (answerSeven !== sfgames[1] || answerSeven !== sfgames[2] || answerSeven !== sfgames[3]){
+var maxGuessesSeven = 6;
+for (var guessesSeven = 0; guessesSeven < maxGuessesSeven; guessesSeven++){
+  var answerSeven = prompt('Can you guess one of the actually good Street Fighter Games? (from 1 to 5)');
+  if (answerSeven === sfgames[0] || answerSeven === sfgames[4]){
     alert(wrong);
-    guessesSeven++;
-  } else if (answerSeven !==sfgames[0] || answerSeven !== sfgames[4]){
-    alert(right + correctAnswersSeven);
+  } else if (answerSeven > sfgames.length){
+    alert(wrong);
+  } else{
+    alert(right);
+    alert(correctAnswersSeven);
     score++;
+    break;
   }
 }
-if (guessesSeven === 6){
-  alert(wrong + correctAnswersSeven);
-}
+
 
 
 alert(user + ' , ' + 'your score was ' + score + ' out of 7.');
