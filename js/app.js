@@ -97,6 +97,9 @@ for (var guessesSix = 0; guessesSix < maxGuessesSix; guessesSix++){
   }
 }
 
+console.log('q6 about numbers, correct answer is 7.', answerSix);
+console.log('current score: possible points at this stage is 6.', score);
+
 var sfgames = [1, 2, 3, 4, 5];
 var maxGuessesSeven = 6;
 for (var guessesSeven = 0; guessesSeven < maxGuessesSeven; guessesSeven++){
@@ -112,6 +115,9 @@ for (var guessesSeven = 0; guessesSeven < maxGuessesSeven; guessesSeven++){
     break;
   }
 }
+
+console.log('q1 about SF games, correct answer is 2, 3, and 4.', answerSeven);
+console.log('current score: possible points at this stage is 7.', score);
 
 alert(user + ' , ' + 'your score was ' + score + ' out of 7.');
 
