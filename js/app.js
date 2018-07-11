@@ -1,7 +1,7 @@
 'use strict';
 
 var user = prompt('What\'s your name?');
-alert('Hello,' + user + 'My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
+alert('Hello,' + user + ' My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
 alert('remember, yes/no or y/n works all the same.');
 var wrong = 'Wrong!';
 var right = 'Right!';
