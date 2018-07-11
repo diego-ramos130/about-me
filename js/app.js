@@ -121,6 +121,7 @@ if (guessesSeven === 6){
 
 
 alert(user + ' , ' + 'your score was ' + score + ' out of 7.');
+
 switch(score) {
 case 0:
   alert(scoreJudgement[score]);
