@@ -17,6 +17,16 @@ var scoreJudgement = [
   'You know more about me than I am comfortable with.',
   'If you got this score, you\'re probably me.',
   'You know me better than I know me.'];
+var questions = [
+  'Do I wear glasses?',
+  'Is my nickname Peter?',
+  'Do I go to the Seattle Campus for CodeFellows?',
+  'Do I like sweets/candy?',
+  'Is Street Fighter 5 My favorite game?',
+  'What is my favorite number?',
+  'Can you guess one of the actually good Street Fighter Games? (from 1 to 5)',
+];
+
 
 console.log('score at start of game should be 0.', score);
 var answerOne = prompt('Do I wear glasses?').toUpperCase();
@@ -31,6 +41,7 @@ if (answerOne === 'Y' || answerOne === 'YES' ) {
 console.log('q1 about glasses, correct answer is yes.', answerOne);
 console.log('current score: possible points at this stage is 1.', score);
 
+
 var answerTwo = prompt('Is my nickname Peter?').toUpperCase();
 if (answerTwo === 'Y' || answerTwo === 'YES') {
   alert(wrong);
@@ -42,6 +53,7 @@ if (answerTwo === 'Y' || answerTwo === 'YES') {
 }
 console.log('q2 about nickname, correct answer is no.', answerTwo);
 console.log('current score: possible points at this stage is 2.', score);
+
 
 var answerThree = prompt('Do I go to the Seattle Campus for CodeFellows?').toUpperCase();
 if (answerThree === 'Y' || answerThree === 'YES') {
