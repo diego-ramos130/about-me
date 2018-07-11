@@ -82,25 +82,22 @@ console.log('q5 about games, correct answer is no.', answerFive);
 console.log('current score: possible points at this stage is 5.', score);
 
 let guessesSix = 0;
+let maxGuesses = 6;
 var answerSix = 0;
-while (answerSix !== 7 || guessesSix !== 4) {
-  answerSix = prompt('What is my favorite number? (from 1 to 20)');
-  if (answerSix > 7) {
+var favNum = 7;
+for (guessesSix = 0; guessesSix < maxGuesses; guessesSix++){
+  answerSix = prompt('What is my favorite number?');
+  if (answerSix > favNum) {
     alert('too high!');
-    guessesSix++;
-  }
-  else if (answerSix < 7){
+  } else if (answerSix < favNum) {
     alert('too low!');
-    guessesSix++;
   }
   else {
     alert(right);
-    score++;
+    break;
   }
 }
-if (guessesSix === 4) {
-  alert(wrong);
-}
+
 
 var sfgames = [1, 2, 3, 4, 5];
 var guessesSeven = 0;
