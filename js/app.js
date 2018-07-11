@@ -2,68 +2,89 @@
 
 alert('Hello, user. My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
 alert('remember, yes/no or y/n works all the same.');
+var wrong = 'Wrong!';
+var right = 'Right!';
+var badInput = 'not correct input!';
 var score = 0;
+
 console.log('score at start of game should be 0.', score);
-var questionOne = prompt('Do I wear glasses?');
-if (questionOne.toUpperCase() === 'Y' || questionOne.toUpperCase() === 'YES' ) {
-  alert('Correct!');
+var answerOne = prompt('Do I wear glasses?').toUpperCase();
+if (answerOne === 'Y' || answerOne === 'YES' ) {
+  alert(right);
   score++;
-} else if (questionOne.toUpperCase() === 'N' || questionOne.toUpperCase() === 'NO') {
-  alert('Incorrect!');
+} else if (answerOne === 'N' || answerOne === 'NO') {
+  alert(wrong);
 } else {
-  alert('Wrong input!');
+  alert(badInput);
 }
-console.log('question one answer about glasses, correct answer is yes.', questionOne);
+console.log('q1 about glasses, correct answer is yes.', answerOne);
 console.log('current score: possible points at this stage is 1.', score);
-var questionTwo = prompt('Is my nickname Peter?');
-if (questionTwo.toUpperCase() === 'Y' || questionTwo.toUpperCase() === 'YES') {
-  alert('Incorrect!');
-} else if (questionTwo.toUpperCase() === 'N' || questionTwo.toUpperCase() === 'NO') {
-  alert('Correct!');
+
+var answerTwo = prompt('Is my nickname Peter?').toUpperCase();
+if (answerTwo === 'Y' || answerTwo === 'YES') {
+  alert(wrong);
+} else if (answerTwo === 'N' || answerTwo === 'NO') {
+  alert(right);
   score++;
 } else {
-  alert('Wrong input!');
+  alert(badInput);
 }
-console.log('question two answer about nickname, correct answer is no.', questionTwo);
+console.log('q2 about nickname, correct answer is no.', answerTwo);
 console.log('current score: possible points at this stage is 2.', score);
 
-var questionThree = prompt('Do I go to the Seattle Campus for CodeFellows?');
-if (questionThree.toUpperCase() === 'Y' || questionThree.toUpperCase() === 'YES') {
-  alert('Correct!');
+var answerThree = prompt('Do I go to the Seattle Campus for CodeFellows?').toUpperCase();
+if (answerThree === 'Y' || answerThree === 'YES') {
+  alert(right);
   score++;
-} else if (questionThree.toUpperCase() === 'N' || questionThree.toUpperCase() === 'NO') {
-  alert('Incorrect!');
+} else if (answerThree === 'N' || answerThree === 'NO') {
+  alert(wrong);
 } else {
-  alert('Wrong input!');
+  alert(badInput);
 }
-console.log('question three answer about school, correct answer is yes.', questionThree);
+console.log('q3 about school, correct answer is yes.', answerThree);
 console.log('current score: possible points at this stage is 3.', score);
 
 
-var questionFour = prompt('Do I like sweets/candy?');
-if (questionFour.toUpperCase() === 'Y' || questionFour.toUpperCase() === 'YES') {
-  alert('Incorrect!');
-} else if (questionFour.toUpperCase() === 'N' || questionFour.toUpperCase() === 'NO') {
-  alert('Correct!');
+var answerFour = prompt('Do I like sweets/candy?').toUpperCase();
+if (answerFour === 'Y' || answerFour === 'YES') {
+  alert(wrong);
+} else if (answerFour === 'N' || answerFour === 'NO') {
+  alert(right);
   score++;
 } else {
-  alert('Wrong input!');
+  alert(badInput);
 }
-console.log('question four answer about food, correct answer is no.', questionFour);
+console.log('q4 about food, correct answer is no.', answerFour);
 console.log('current score: possible points at this stage is 4.', score);
 
 
-var questionFive = prompt('Is Street Fighter 5 My favorite game?');
-if (questionFive.toUpperCase() === 'Y' || questionFive.toUpperCase() === 'YES') {
-  alert('Incorrect!');
-} else if (questionFive.toUpperCase() === 'N' || questionFive.toUpperCase() === 'NO') {
-  alert('Correct!');
+var answerFive = prompt('Is Street Fighter 5 My favorite game?').toUpperCase();
+if (answerFive === 'Y' || answerFive === 'YES') {
+  alert(wrong);
+} else if (answerFive === 'N' || answerFive === 'NO') {
+  alert(right);
   score++;
 } else {
-  alert('Wrong input!');
+  alert(badInput);
 }
-console.log('question five answer about games, correct answer is no.', questionFive);
+console.log('q5 about games, correct answer is no.', answerFive);
 console.log('current score: possible points at this stage is 5.', score);
+
+let guesses = 0; 
+var answerSix = prompt('What is my favorite number? (from 1 to 20)');
+while (answerSix !== 7 || guesses !== 4) {
+  if (answerSix > 7) {
+    alert('too high!');
+  }
+  else {
+    alert('too low!');
+  }
+  guesses++;
+}
+if (guesses === 4) {
+  alert(wrong);
+
+}
 
 
 alert('your score was ' + score + ' out of 5.');
