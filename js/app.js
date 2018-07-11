@@ -113,8 +113,6 @@ for (var guessesSeven = 0; guessesSeven < maxGuessesSeven; guessesSeven++){
   }
 }
 
-
-
 alert(user + ' , ' + 'your score was ' + score + ' out of 7.');
 
 switch(score) {
@@ -149,7 +147,5 @@ case 6:
 case 7:
   alert(scoreJudgement[score]);
   break;
-
-
 }
 

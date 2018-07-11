@@ -1,6 +1,27 @@
 body {
-  background: rgb(114, 179, 179);
+  background: rgb(102, 255, 204);
 }
-header {
-  font-family: monospace;
+@font-face {
+  font-family: myFont;
+  src: url(mirror\ 82_v2.otf);
+}
+
+ol {
+  font-family: myFont;
+  border: 1em solid teal;
+  padding: 2em;
+}
+
+ul{
+  font-family: myFont;
+  border: 1em solid crimson;
+  padding: 2em;
+}
+
+h1{
+  font-family: sans-serif;
+}
+
+h2{
+  font-family: sans-serif;
 }
