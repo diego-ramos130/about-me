@@ -1,5 +1,6 @@
 body {
   background: rgb(102, 255, 204);
+  font-family: myFont;
 }
 @font-face {
   font-family: myFont;
@@ -10,12 +11,17 @@ ol {
   font-family: myFont;
   border: 1em solid teal;
   padding: 2em;
+  
 }
 
 ul{
   font-family: myFont;
   border: 1em solid crimson;
   padding: 2em;
+}
+
+ol ul{
+  border: 2px solid slategray;
 }
 
 h1, h2{
