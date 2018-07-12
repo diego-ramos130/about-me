@@ -37,6 +37,10 @@ var scoreJudgement = [
 
   questionOne();
 
+
+
+function questionSecond(){
+
 var answerTwo = prompt('Is my nickname Peter?').toUpperCase();
 if (answerTwo === 'Y' || answerTwo === 'YES') {
   alert(wrong);
@@ -48,7 +52,9 @@ if (answerTwo === 'Y' || answerTwo === 'YES') {
 }
 console.log('q2 about nickname, correct answer is no.', answerTwo);
 console.log('current score: possible points at this stage is 2.', score);
+}
 
+questionSecond();
 
 var answerThree = prompt('Do I go to the Seattle Campus for CodeFellows?').toUpperCase();
 if (answerThree === 'Y' || answerThree === 'YES') {
