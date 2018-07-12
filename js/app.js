@@ -18,19 +18,24 @@ var scoreJudgement = [
   'If you got this score, you\'re probably me.',
   'You know me better than I know me.'];
 
-console.log('score at start of game should be 0.', score);
-var answerOne = prompt('Do I wear glasses?').toUpperCase();
-if (answerOne === 'Y' || answerOne === 'YES' ) {
-  alert(right);
-  score++;
-} else if (answerOne === 'N' || answerOne === 'NO') {
-  alert(wrong);
-} else {
-  alert(badInput);
-}
-console.log('q1 about glasses, correct answer is yes.', answerOne);
-console.log('current score: possible points at this stage is 1.', score);
 
+  function questionOne(){
+
+    console.log('score at start of game should be 0.', score);
+    var answerOne = prompt('Do I wear glasses?').toUpperCase();
+    if (answerOne === 'Y' || answerOne === 'YES' ) {
+      alert(right);
+      score++;
+    } else if (answerOne === 'N' || answerOne === 'NO') {
+      alert(wrong);
+    } else {
+      alert(badInput);
+    }
+    console.log('q1 about glasses, correct answer is yes.', answerOne);
+    console.log('current score: possible points at this stage is 1.', score);
+  }
+
+  questionOne();
 
 var answerTwo = prompt('Is my nickname Peter?').toUpperCase();
 if (answerTwo === 'Y' || answerTwo === 'YES') {
