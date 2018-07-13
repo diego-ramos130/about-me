@@ -1,13 +1,10 @@
 'use strict';
-
-var user = prompt('What\'s your name?');
-alert('Hello,' + user + ' My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
-alert('remember, yes/no or y/n works all the same.');
 var wrong = 'Wrong!';
 var right = 'Right!';
 var badInput = 'not correct input!';
 var correctAnswersSeven = ' The correct answers were 2, 3, and 4.';
 var score = 0;
+var user = '';
 var scoreJudgement = [
   'You don\'t know me very well! Talk to me sometime.', //indice 0 score 0
   'You know me a little. At least you tried.', //indice 1 score 1
@@ -18,6 +15,12 @@ var scoreJudgement = [
   'If you got this score, you\'re probably me.',
   'You know me better than I know me.'];
 
+function whatsyourname(){
+  user = prompt('What\'s your name?');
+  alert('Hello,' + user + ' My name is Diego Ramos, and this is my Program. If you want, you can answer these yes/no questions about me.');
+  alert('remember, yes/no or y/n works all the same.');
+}
+whatsyourname();
 
 function questionOne(){
   console.log('score at start of game should be 0.', score);
@@ -139,40 +142,42 @@ questionSeventh();
 
 
 console.log('current score: possible points at this stage is 7.', score);
+function calcScore(){
+  alert(user + ' , ' + 'your score was ' + score + ' out of 7.');
 
-alert(user + ' , ' + 'your score was ' + score + ' out of 7.');
+  switch(score) {
+  case 0:
+    alert(scoreJudgement[score]);
+    break;
 
-switch(score) {
-case 0:
-  alert(scoreJudgement[score]);
-  break;
+  case 1:
+    alert(scoreJudgement[score]);
+    break;
 
-case 1:
-  alert(scoreJudgement[score]);
-  break;
+  case 2:
+    alert(scoreJudgement[score]);
+    break;
 
-case 2:
-  alert(scoreJudgement[score]);
-  break;
+  case 3:
+    alert(scoreJudgement[score]);
+    break;
 
-case 3:
-  alert(scoreJudgement[score]);
-  break;
+  case 4:
+    alert(scoreJudgement[score]);
+    break;
 
-case 4:
-  alert(scoreJudgement[score]);
-  break;
+  case 5:
+    alert(scoreJudgement[score]);
+    break;
 
-case 5:
-  alert(scoreJudgement[score]);
-  break;
+  case 6:
+    alert(scoreJudgement[score]);
+    break;
 
-case 6:
-  alert(scoreJudgement[score]);
-  break;
-
-case 7:
-  alert(scoreJudgement[score]);
-  break;
+  case 7:
+    alert(scoreJudgement[score]);
+    break;
+  }
 }
 
+calcScore();

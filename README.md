@@ -6,4 +6,6 @@ prompt structure into alert is as follows: if the user answers y/yes (not case-s
 
 The user is given a point for each correct answer and is given the total of their points at the end of the quiz. in addition, in console there are messages that update the score for each question as well as provide the answer after the user has already answered the question. 
 
-Peer programmed by Dmitry (https://github.com/polevoyd)
+
+Peer programmed by Dmitry As Driver (https://github.com/polevoyd)
+Diego as Navigator (https://github.com/diego-ramos130)
